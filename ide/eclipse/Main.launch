@@ -10,5 +10,5 @@
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="performance.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spf4j-demo"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-javaagent:/home/jimsey/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar&#10;-Dperf.ms.config=TSDB@~/file.tsdb,TSDB_TXT@~/file.tsdbtxt"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-javaagent:/home/jimsey/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar&#10;-Dspf4j.perf.ms.config=TSDB@/tmp/spf4j.mertrics.tsdb,TSDB_TXT@/tmp/spf4j.metrics.tsdb.txt"/>
 </launchConfiguration>

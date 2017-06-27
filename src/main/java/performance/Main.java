@@ -19,6 +19,8 @@ public class Main implements Runnable {
   @Override
   public void run() {
     logger.info("perf.ms.config:{}", System.getProperty("perf.ms.config"));
+    logger.info("java.io.tmpdir:{}", System.getProperty("java.io.tmpdir"));
+
     engine.runEngine();
   }
 
