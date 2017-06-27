@@ -73,6 +73,18 @@
       <version>${spf4j.version}</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.spf4j</groupId>
+      <artifactId>spf4j-aspects</artifactId>
+      <version>${spf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.spf4j</groupId>
+      <artifactId>spf4j-jmh</artifactId>
+      <version>${spf4j.version}</version>
+    </dependency>
+
     <!-- TEST -->
     <dependency>
       <groupId>junit</groupId>
