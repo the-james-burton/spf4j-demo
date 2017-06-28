@@ -5,6 +5,8 @@ import java.util.stream.IntStream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.spf4j.annotations.PerformanceMonitor;
+import org.spf4j.annotations.RecorderSourceInstance;
 
 public class Engine {
 
@@ -16,11 +18,15 @@ public class Engine {
 
   private Consumers consumers = new Consumers();
 
+  @PerformanceMonitor(warnThresholdMillis = 10, errorThresholdMillis = 100, recorderSource = RecorderSourceInstance.Rs5m.class)
   public void runEngine() {
     IntStream
         .generate(() -> producers.produceNumber())
-        .limit(10)
+        .limit(100)
         .map(i -> compute.computeOne(i))
+        .map(i -> compute.computeTwo(i))
+        .map(i -> compute.computeThree(i))
+        .map(i -> compute.computeFour(i))
         .forEach(i -> consumers.consumeNumber(i));
   }
 }

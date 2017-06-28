@@ -7,7 +7,7 @@ import org.spf4j.annotations.RecorderSourceInstance;
 
 public class Producers {
 
-  @PerformanceMonitor(warnThresholdMillis = 1, errorThresholdMillis = 100, recorderSource = RecorderSourceInstance.Rs5m.class)
+  @PerformanceMonitor(warnThresholdMillis = 10, errorThresholdMillis = 100, recorderSource = RecorderSourceInstance.Rs5m.class)
   public Integer produceNumber() {
     return ThreadLocalRandom.current().nextInt(1, 10);
   }

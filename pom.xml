@@ -41,6 +41,7 @@
     <!-- deps -->
     <logback.version>1.1.5</logback.version>
     <spf4j.version>8.3.5</spf4j.version>
+    <args4j.version>2.33</args4j.version>
     <junit.version>4.12</junit.version>
     <mockito.version>1.10.19</mockito.version>
     <assertj.version>3.6.2</assertj.version>
@@ -83,6 +84,18 @@
       <groupId>org.spf4j</groupId>
       <artifactId>spf4j-jmh</artifactId>
       <version>${spf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.spf4j</groupId>
+      <artifactId>spf4j-ui</artifactId>
+      <version>${spf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>args4j</groupId>
+      <artifactId>args4j</artifactId>
+      <version>${args4j.version}</version>
     </dependency>
 
     <!-- TEST -->
